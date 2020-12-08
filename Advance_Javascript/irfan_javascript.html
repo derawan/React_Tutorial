@@ -1,0 +1,132 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+
+
+
+        <script>
+
+            var myName = "Fakhri";
+
+            var myAddress = "Jakarta";
+
+            var myFunction = function() {
+                return `${myName} is living in ${myAddress}`;
+            }
+
+
+            // buat object dengan json
+            var myData = {
+                Name : "Ausmick",
+                Address : "Surabaya",
+                Dimana : function() {
+                    return `${this.Name} is living in ${this.Address}`;
+                },
+                FungsiLambda : () => {
+                    // ini tidak bisa dipakai karena ada this
+                    return `${this.Name} is living in ${this.Address}`;
+                }
+            }
+
+            // buat object dengan fungsi konstruktor
+            function Orang(namanya, alamatnya)
+            {
+                this.Name = namanya;
+                this.Address = alamatnya;
+                this.Dimana = function() {
+                    return `${this.Name} is living in ${this.Address}`;
+                }
+                this.FungsiLambda = () => {
+                    
+                    return `${this.Name} is living in ${this.Address}`;
+                }
+                return this;
+            }
+
+            var orang1 = new Orang('ika',"jakarta")
+
+            class  Orang2 {
+
+                constructor (namanya, alamatnya)
+                {
+                    this.Name = namanya;
+                    this.Address = alamatnya;
+                    this.FungsiLambda = () => {
+                        return `${this.Name} is living in ${this.Address}`;
+                    }
+                }
+
+
+                Dimana() {
+                    return `${this.Name} is living in ${this.Address}`;
+                }
+
+
+                get Nama() {
+                    return this.Name;
+                }
+
+                set Nama(value) {
+                    this.Name = value;
+                }
+
+
+            }
+
+            class MuridCodeva extends Orang2  {
+
+                constructor (namanya, alamatnya)
+                {
+                    super(namanya, alamatnya);
+                }
+
+                Jalan(ke) {
+                    return "ayo jalan jalan" + ke
+                }
+
+                /// overriding
+                Dimana() {
+                    return " au ah gelap" + super.Dimana();
+                }
+            }
+
+            var mydata = new MuridCodeva('ali','baba');
+            console.log(mydata.Dimana());
+            var myfunction = mydata.Dimana.bind(mydata);
+            var myfunction2 = mydata.Jalan.bind(mydata,"jakarta");
+            console.log(myfunction());
+            console.log(myfunction2());
+
+
+
+
+
+
+
+
+
+            console.log(myFunction());
+            console.log(myData.Dimana())
+            console.log(myData.FungsiLambda())
+
+            var products = [
+            {sku:'001', nama:'produk 001', warna:'red', price:3000 },
+            {sku:'002', nama:'produk 002', warna:'gray', price:1000 },
+            {sku:'003', nama:'produk 003', warna:'red', price:2000 },
+            {sku:'004', nama:'produk 004', warna:'gray', price:5000 },
+            {sku:'005', nama:'produk 005', warna:'red', price:3500 },
+            {sku:'006', nama:'produk 006', warna:'green', price:400 }
+            ]
+
+            products.forEach(product => {console.log(product)});
+            products.filter( product => product.price < 2000  )
+            products.filter( product => product.warna === 'gray'  )
+            products.map( product => product.nama + " " + product.warna)
+            products.map( product => { data:product.nama, item:product.warna })
+
+        </script>
+
+    </body>
+</html>
