@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {variableku, dodol} from './myvar';
 import {variableku as myvar} from './mydiv';
-import BuatParagraph from './mydiv2';
+import {BuatParagraph, MyClass} from './mydiv2';
 // export  {variableku, dodol} from ....
 var punya_nindya = "goban"
 
@@ -22,10 +22,11 @@ function App() {
   var myparagraph = (
     <p>hallo bro</p>
   );
-
+cd 
   return (
     <div>
       Hallo Bro Welcome To The Jungle !!!! {myvariable}
+      <MyClass/>
       <span>{myarray}</span>
       <hr/>
       <span>{myarray[1]}</span>
