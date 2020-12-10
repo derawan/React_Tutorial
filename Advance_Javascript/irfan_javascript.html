@@ -121,10 +121,17 @@
             ]
 
             products.forEach(product => {console.log(product)});
-            products.filter( product => product.price < 2000  )
-            products.filter( product => product.warna === 'gray'  )
-            products.map( product => product.nama + " " + product.warna)
-            products.map( product => { data:product.nama, item:product.warna })
+            console.log(products.filter( product => product.price < 2000  ))
+            console.log(products.filter( product => product.warna === 'gray'  ))
+            console.log(products.map( product => product.nama + " " + product.warna))
+            console.log(products.map( product => { return {
+                    id:product.sku, nama:product.nama
+                };
+            }
+            ))
+
+            
+            
 
         </script>
 
