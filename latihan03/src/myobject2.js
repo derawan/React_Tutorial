@@ -34,12 +34,13 @@ class MyComponent2 extends bobo {
         //[counter, setCounter] = useState(0);
     }
 
-    TekanSaya(e) {
+    TekanSaya() {
         //props.nama = "irfan"
         //setCounter(counter + 1);
         // this.counter = this.counter+1;
         // counter = counter +1; 
         // alert(counter)
+        
     }
     render() {
         return (
@@ -47,7 +48,7 @@ class MyComponent2 extends bobo {
                 <li onClick={()=>this.setState({counter:this.state.counter + 1})}>Abe {this.props.nama}</li>
                 <li>Abo {this.state.counter}</li>
                 <li  onClick={()=>this.setState({data:this.state.data + 1})}>Abu {this.state.data}</li>
-                <li  onClick={()=>{this.props.nama = "irfan"}}> {this.state.data * 10} </li>
+                <li  onClick={()=>{this.props.namyarna = "irfan"}}> {this.state.data * 10} </li>
                 <li  onClick={()=>{this.x = this.x + 1;}}> xxxxx{this.x} </li>
                 <li  onClick={()=>{alert(this.x)}}> yyyyy {this.x} </li>
             </ul>  
