@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {trythis, Latihan, App} from './App';
+import {Testing1, TryingComponent} from './nindyakin1';
+import {Testing2, Testing3} from './nindyakin2';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {trythis}
+    <hr/>
+    <Latihan />
+    <hr/>
+    <App nama="nindya kinanti" dom="jakarta" hobby="membaca" />
+    <hr/>
+    <App nama="dwita" dom="bekasi" hobby="berenang" />
+    <hr/>
+    <TryingComponent />
+    <hr/>
+    <Testing1 />
+    <Testing2 />
+    <Testing3 />
   </React.StrictMode>,
   document.getElementById('root')
 );
