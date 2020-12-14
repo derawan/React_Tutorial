@@ -35,8 +35,12 @@ function Testing() {
     return (
         <ul>
             <li>data data data 1</li>
-            <li onClick={()=>setCounter(counter+1)}>data data data 2 {counter}</li>
-            <li>data data data 3</li>
+            <li onClick={()=>setCounter(counter+1)}>state fungsi {counter}</li>
+            <li>data data data  {counter}</li>
+            <li>data data data  {counter}</li>
+            <li>data data data  {counter}</li>
+            <li>data data data  {counter}</li>
+            <li>data data data  {counter}</li>
         </ul>
     )
 }

@@ -3,10 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/header';
+import Sidebar from './components/sidebar';
+import Content from './components/content';
+import Footer from './components/footer';
+import RightSideBar from './components/rightsidebar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Sidebar/>
+    <Content/>
+    <Footer/>
+    <RightSideBar/>
   </React.StrictMode>,
   document.getElementById('root')
 );

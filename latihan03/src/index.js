@@ -24,6 +24,9 @@ ReactDOM.render(
 
     <Compo1 hallo="rizky"></Compo1>
     <MyComponent2 nama="nabila"></MyComponent2>
+
+    <Testing/>
+    <MyComponent2 nama="gleen"></MyComponent2>
   </React.StrictMode>,
   document.getElementById('root')
 );
