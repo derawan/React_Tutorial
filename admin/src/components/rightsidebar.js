@@ -102,7 +102,7 @@ function RightSideBar()
                             </h4>
                 
                             <div className="progress progress-xxs">
-                                <div className="progress-bar progress-bar-primary" ></div>
+                                <div className="progress-bar progress-bar-primary"></div>
                             </div>
                             </a>
                         </li>
@@ -115,7 +115,7 @@ function RightSideBar()
                 
                         <div className="form-group">
                             <label className="control-sidebar-subheading">
-                                Report panel usage
+''                                Report panel usage
                                 <input type="checkbox" className="pull-right" checked />
                             </label>
                 
@@ -131,7 +131,7 @@ function RightSideBar()
                             </label>
                 
                             <p>
-                            Other sets of options are available
+     ''                       Other sets of options are available
                             </p>
                         </div>
                         

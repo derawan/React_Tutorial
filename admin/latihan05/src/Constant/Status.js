@@ -1,8 +1,8 @@
 
 
-const PENDING  = "PENDING";
-const APPROVED = "APPROVED";
-const REJECTED = "REJECTED";
-const BANNED = "DIBANNED";
+export const PENDING  = "PENDING";
+export const APPROVED = "APPROVED";
+export const REJECTED = "REJECTED";
+export const BANNED = "DIBANNED";
 
-export {PENDING,APPROVED, REJECTED, BANNED}
+//export {PENDING,APPROVED, REJECTED, BANNED}
